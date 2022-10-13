@@ -1,0 +1,17 @@
+Description: little test fix
+ Due to vinyl update
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-03-30
+
+--- a/test/File.js
++++ b/test/File.js
+@@ -6,7 +6,7 @@
+ describe('File()', function() {
+   it('should return a valid file', function(done) {
+     var fname = path.join(__dirname, './fixtures/test.coffee');
+-    var base = path.join(__dirname, './fixtures/');
++    var base = path.join(__dirname, './fixtures');
+     var file = new util.File({
+       base: base,
+       cwd: __dirname,

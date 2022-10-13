@@ -1,0 +1,38 @@
+node-gulp-util (3.0.8-2) unstable; urgency=medium
+
+  * Team Upload
+  * Fix test for Node.js ≥ 12
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 22 Jun 2020 08:47:28 +0200
+
+node-gulp-util (3.0.8-1) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Abraham Raji ]
+  * New upstream version 3.0.8
+  * Changed section to javascript
+  * Bumped standards version to 4.5.0
+  * Changed install path to usr/share/ in debian/install
+  * Changed to debhelper-compat and bumped version to 12
+  * whitespaces fix
+  * Changed from Anonscm to Salsa
+  * whitespaces and https
+  * Whitespace fix
+  * No root required
+  * Description Warning fixed lintian
+  * Added Upstream Metadata file
+
+  [ Xavier Guimard ]
+  * Add debian/gbp.conf
+  * Use pkg-js-tools auto install
+  * Embed some little modules for test only
+  * Enable upstream test using mocha
+
+ -- Abraham Raji <avronr@tuta.io>  Mon, 30 Mar 2020 02:41:45 +0000
+
+node-gulp-util (3.0.7-1) unstable; urgency=low
+
+  * Initial release (Closes: #848581)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 19 Dec 2016 11:16:19 +0530
