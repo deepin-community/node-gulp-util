@@ -1,5 +1,26 @@
-version=3
+version=4
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-gulp-util,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-gulp-util-$1/" \
+ https://registry.npmjs.org/@types/gulp-util https://registry.npmjs.org/@types/gulp-util/-/gulp-util-([\d\.]+)@ARCHIVE_EXT@ group
+
 opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-gulp-util-$1.tar.gz/ \
- https://github.com/gulpjs/gulp-util/tags .*/archive/v?([\d\.]+).tar.gz
+component=gulp-header,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-gulp-header-$1/ \
+ https://github.com/tracker1/gulp-header/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=gulp-replace,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-gulp-replace-$1/ \
+ https://github.com/lazd/gulp-replace/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=replacestream,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-replacestream-$1/ \
+ https://github.com/eugeneware/replacestream/tags .*/archive.*/v?([\d\.]+).tar.gz checksum

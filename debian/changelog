@@ -1,3 +1,56 @@
+node-gulp-util (3.0.36+~cs7.1.15-2) unstable; urgency=medium
+
+  * Add missing dependency on node-escape-string-regexp, node-object-assign,
+    node-through2 and node-lodash-packages
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 16 May 2022 00:02:18 +0530
+
+node-gulp-util (3.0.36+~cs7.1.15-1) unstable; urgency=medium
+
+  * Drop gulp-util module and make @types/gulp-util as main module
+    (Closes: #1010895)
+  * Update description to reflect change in package
+  * New upstream version 3.0.36+~cs7.1.15
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 15 May 2022 17:11:43 +0530
+
+node-gulp-util (3.0.8+~cs10.1.51-1) unstable; urgency=medium
+
+  * Add gulp-replace as component
+  * New upstream version 3.0.8+~cs6.1.48
+  * Add replacestream as component
+  * New upstream version 3.0.8+~cs10.1.51
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 15 May 2022 15:38:40 +0530
+
+node-gulp-util (3.0.8+~cs5.0.45-1) unstable; urgency=medium
+
+  * Add gulp-header as a component
+  * New upstream version 3.0.8+~cs5.0.45
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 02 May 2022 22:46:27 +0530
+
+node-gulp-util (3.0.8+~3.0.36-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jérémy Lal ]
+  * Fix Vcs urls
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update standards version to 4.6.0, no changes needed
+  * Drop dependency to nodejs
+  * Embed typescript declarations and repack
+  * Replace embedded test modules duplexer by test dependency
+  * Drop unneeded versioned dependency constraint
+
+ -- Yadd <yadd@debian.org>  Sun, 26 Dec 2021 21:43:12 +0100
+
 node-gulp-util (3.0.8-2) unstable; urgency=medium
 
   * Team Upload

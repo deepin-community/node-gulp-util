@@ -1,0 +1,13 @@
+Forwarded: https://github.com/eugeneware/replacestream/issues/43
+
+--- a/replacestream/index.js
++++ b/replacestream/index.js
+@@ -2,7 +2,7 @@
+ 
+ var escapeRegExp = require('escape-string-regexp');
+ var objectAssign = require('object-assign');
+-var Transform = require('readable-stream/transform');
++var Transform = require('readable-stream').Transform;
+ 
+ module.exports = function ReplaceStream(search, replace, options) {
+   var tail = '';
