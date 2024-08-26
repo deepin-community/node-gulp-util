@@ -4,60 +4,34 @@ Uploaders: Pirate Praveen <praveen@debian.org>
 Section: javascript
 Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
-Build-Depends:
- debhelper-compat (= 12)
- , mocha <!nocheck>
- , node-array-differ <!nocheck>
- , node-array-uniq <!nocheck>
- , node-beeper <!nocheck>
- , node-chalk <!nocheck>
- , node-dateformat <!nocheck>
- , node-fancy-log <!nocheck>
- , node-gulplog <!nocheck>
- , node-has-gulplog <!nocheck>
- , node-lodash-packages <!nocheck>
- , node-lodash-reescape <!nocheck>
- , node-lodash-reevaluate <!nocheck>
- , node-minimist <!nocheck>
- , node-multipipe <!nocheck>
- , node-object-assign <!nocheck>
- , node-replace-ext <!nocheck>
- , node-should <!nocheck>
- , node-split <!nocheck>
- , node-through <!nocheck>
- , node-through2 (>= 2.0.0) <!nocheck>
- , node-vinyl <!nocheck>
- , nodejs (>= 12)
- , pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.5.0
-Vcs-Browser: https://github.com/gulpjs/gulp-util
-Vcs-Git: https://github.com/gulpjs/gulp-util.git
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+# for gulp-replace -> replacestream
+ , node-concat-stream <!nocheck>
+ , chai <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-gulp-util
+Vcs-Git: https://salsa.debian.org/js-team/node-gulp-util.git
 Homepage: https://github.com/gulpjs/gulp-util
 Rules-Requires-Root: no
 
 Package: node-gulp-util
 Architecture: all
-Depends:
- ${misc:Depends}
- , node-array-differ
- , node-array-uniq
- , node-beeper
- , node-chalk
- , node-dateformat
- , node-fancy-log
- , node-gulplog
- , node-has-gulplog
+Depends: ${misc:Depends}
+# for gulp-header
+ , node-concat-with-sourcemaps
+ , node-through2
  , node-lodash-packages
- , node-lodash-reescape
- , node-lodash-reevaluate
- , node-minimist
- , node-multipipe
+# for gulp-replace
+ , node-readable-stream (>= 3.0~)
+ , node-istextorbinary
+ , node-escape-string-regexp
  , node-object-assign
- , node-replace-ext
- , node-through2 (>= 2.0.0)
- , node-vinyl
- , nodejs
-Description: Utility functions for gulp plugins
- Node.js is an event-based server-side JavaScript engine.
- This module has been deprecated. More information
+Provides: ${nodejs:Provides}
+Description: Type definitions for gulp-util Node.js module
+ gulp-util module has been deprecated. More information
  at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+ .
+ This package now only includes type definitions of gulp-util.
+ .
+ Node.js is an event-based server-side JavaScript engine.

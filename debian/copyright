@@ -2,6 +2,10 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: gulp-util
 Upstream-Contact: https://github.com/gulpjs/gulp-util/issues
 Source: https://github.com/gulpjs/gulp-util#readme
+ https://registry.npmjs.org/@types/gulp-util
+ https://github.com/tracker1/gulp-header/tags
+ https://github.com/lazd/gulp-replace/tags
+ https://github.com/eugeneware/replacestream/tags
 
 Files: *
 Copyright: 2014 Fractal <contact@wearefractal.com> (https://wearefractal.com/)
@@ -9,14 +13,23 @@ License: Expat
 
 Files: debian/*
 Copyright: 2016 Pirate Praveen <praveen@debian.org>
+ 2021 Yadd <yadd@debian.org>
 License: Expat
 
-Files: debian/tests/test_modules/*
-Copyright: 2011-2013 Dominic Tarr
-License: Apache-2.0 or Expat
+Files: gulp-header/*
+Copyright: 2013-2015 Michael J. Ryan <tracker1> and GoDaddy.com
+License: Expat
 
-Files: debian/tests/test_modules/duplexer/*
-Copyright: 2012 Raynos
+Files: gulp-replace/*
+Copyright: 2013 Larry Davis
+License: Expat
+
+Files: replacestream/*
+Copyright: 2014, Eugene Ware
+License: BSD-3-clause
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Apache-2.0
@@ -34,6 +47,32 @@ License: Apache-2.0
  .
  On Debian systems, the complete text of the Apache License 2.0 can
  be found in "/usr/share/common-licenses/Apache-2.0"
+
+License: BSD-3-Clause
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of Eugene Ware nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY EUGENE WARE ''AS IS'' AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL EUGENE WARE BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 License: Expat
  Permission is hereby granted, free of charge, to any person
